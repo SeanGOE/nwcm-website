@@ -1,0 +1,34 @@
+{
+  "dependencies": {
+    "intersection-observer": "^0.12.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.13.0",
+    "styled-components": "^6.1.16"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.12",
+    "@types/react-dom": "^19.0.4",
+    "copy-webpack-plugin": "^13.0.0",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.3",
+    "mini-css-extract-plugin": "^2.9.2",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.2",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
+  },
+  "scripts": {
+    "build": "webpack --config src/webpack.config.js",
+    "lint": "comfy-tslint --no-mutation src/*.{ts,tsx}",
+    "test": "ts-mocha -p tsconfig.json src/**/*_test.{ts,tsx} --require ignore-styles",
+    "start": "webpack-dev-server --config src/webpack.config.js"
+  },
+  "name": "client",
+  "version": "0.0.1",
+  "description": "test website",
+  "main": "index.tsx",
+  "author": "sean",
+  "license": "ISC"
+}

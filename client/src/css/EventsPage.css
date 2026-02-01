@@ -1,0 +1,556 @@
+.events_page {
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    min-height: 400px;
+    overflow: hidden;
+    margin-top: 70px;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.hero-overlay h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Events Container */
+.events-container {
+    max-width: 1200px;
+    margin: 3em auto;
+    padding: 0 2em;
+}
+
+.events-subtitle {
+    text-align: center;
+    font-size: 2.2em;
+    color: #113547;
+    margin-bottom: 1.5em;
+    font-weight: 600;
+}
+
+/* Calendar Container */
+.calendar-container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Calendar Header with Navigation */
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.calendar-header h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  font-weight: 600;
+}
+
+.nav-button {
+  background: #113547;
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+  flex-shrink: 0;
+}
+
+.nav-button:hover {
+  background: #1a4d66;
+}
+
+/* Weekday Headers */
+.calendar-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.weekday {
+  text-align: center;
+  font-weight: 600;
+  color: #666;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+/* Calendar Grid */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+/* Calendar Day Cell */
+.calendar-day {
+  aspect-ratio: 1;
+  min-height: 80px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 8px;
+  background: #fafafa;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.calendar-day:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-day.empty {
+  background: transparent;
+  border: none;
+}
+
+.calendar-day.today {
+  background: #e3f2fd;
+  border: 2px solid #113547;
+}
+
+.calendar-day.has-events {
+  background: #fff3e0;
+  border-color: #ff9800;
+}
+
+/* Day Number */
+.day-number {
+  font-weight: 600;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* Events on a Day */
+.day-events {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 8px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.event-dot {
+  background: #113547;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.event-dot:hover {
+  background: #1a4d66;
+}
+
+.event-title {
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.event-time {
+  font-size: 10px;
+  opacity: 0.9;
+  margin-top: 2px;
+}
+
+/* Event Detail Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.2s ease-in;
+  padding: 1em;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-content {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 500px;
+  width: 100%;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 32px;
+  color: #999;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+
+.modal-close:hover {
+  background: #f0f0f0;
+  color: #333;
+}
+
+.modal-title {
+  margin: 0 0 25px 0;
+  font-size: 28px;
+  color: #333;
+  font-weight: 600;
+  padding-right: 30px;
+}
+
+.modal-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modal-detail-row {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.modal-detail-row.description {
+  flex-direction: column;
+  gap: 5px;
+}
+
+.modal-label {
+  font-weight: 600;
+  color: #666;
+  min-width: 100px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.modal-value {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+  flex: 1;
+}
+
+.modal-detail-row.description .modal-value {
+  margin: 0;
+}
+
+/* Tablet screens */
+@media (max-width: 1024px) {
+  .hero-overlay h1 {
+    font-size: 3em;
+  }
+
+  .events-subtitle {
+    font-size: 2em;
+  }
+
+  .calendar-container {
+    padding: 15px;
+  }
+
+  .calendar-day {
+    min-height: 70px;
+    padding: 6px;
+  }
+
+  .day-number {
+    font-size: 14px;
+  }
+}
+
+/* Small tablets and large phones */
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 300px;
+    height: 40vh;
+  }
+
+  .hero-overlay h1 {
+    font-size: 2.5em;
+  }
+
+  .events-container {
+    margin: 2em auto;
+    padding: 0 1em;
+  }
+
+  .events-subtitle {
+    font-size: 1.8em;
+  }
+
+  .calendar-container {
+    padding: 10px;
+  }
+  
+  .calendar-header h2 {
+    font-size: 20px;
+  }
+
+  .nav-button {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+  }
+
+  .weekday {
+    font-size: 12px;
+    padding: 8px 0;
+  }
+
+  .calendar-day {
+    min-height: 60px;
+    padding: 5px;
+  }
+  
+  .day-number {
+    font-size: 13px;
+  }
+  
+  .event-dot {
+    font-size: 10px;
+    padding: 3px 6px;
+  }
+
+  .modal-content {
+    padding: 25px;
+  }
+  
+  .modal-title {
+    font-size: 24px;
+  }
+  
+  .modal-label {
+    min-width: 80px;
+    font-size: 13px;
+  }
+  
+  .modal-value {
+    font-size: 15px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .hero-section {
+    min-height: 250px;
+    height: 35vh;
+  }
+
+  .hero-overlay h1 {
+    font-size: 2em;
+  }
+
+  .events-subtitle {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+
+  .calendar-container {
+    padding: 8px;
+    margin: 10px auto;
+  }
+
+  .calendar-header {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+  }
+
+  .calendar-header h2 {
+    font-size: 18px;
+  }
+
+  .nav-button {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+  }
+
+  .calendar-grid {
+    gap: 3px;
+  }
+
+  .weekday {
+    font-size: 11px;
+    padding: 5px 0;
+  }
+
+  .calendar-day {
+    min-height: 50px;
+    padding: 4px;
+    border-radius: 4px;
+  }
+
+  .day-number {
+    font-size: 12px;
+    margin-bottom: 3px;
+  }
+
+  /* Show event indicators as dots on mobile */
+  .event-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    padding: 0;
+    min-height: 8px;
+    background: #113547;
+  }
+
+  .event-title,
+  .event-time {
+    display: none;
+  }
+
+  .day-events {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3px;
+    margin-top: 4px;
+  }
+
+  .modal-overlay {
+    padding: 0.5em;
+  }
+
+  .modal-content {
+    padding: 20px;
+  }
+  
+  .modal-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .modal-detail-row {
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .modal-label {
+    min-width: auto;
+  }
+
+  .modal-close {
+    width: 35px;
+    height: 35px;
+    font-size: 28px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 360px) {
+  .hero-overlay h1 {
+    font-size: 1.6em;
+  }
+
+  .events-subtitle {
+    font-size: 1.3em;
+  }
+
+  .calendar-header h2 {
+    font-size: 16px;
+  }
+
+  .weekday {
+    font-size: 10px;
+  }
+
+  .calendar-day {
+    min-height: 45px;
+    padding: 3px;
+  }
+
+  .day-number {
+    font-size: 11px;
+  }
+
+  .event-dot {
+    width: 6px;
+    height: 6px;
+  }
+}

@@ -1,0 +1,299 @@
+.top-bar {
+    width: 100%;
+    height: 70px;
+    background-color: #0f0f0f;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: none;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-container {
+    display: flex;
+    background-color: #0f0f0f;
+    width: auto;
+    height: 70px;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0.5em;
+    padding: 0 1em;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/* Update button styles to work with Link */
+.button {
+  outline: 0 !important;
+  border: 0 !important;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: all ease-in-out 0.1s;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  font-family: Optima, sans-serif;
+  white-space: nowrap;
+  font-size: 1em;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+}
+
+/* Bottom menu link styles */
+.bottom-menu-content a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.bottom-menu-content a:hover {
+  color: rgb(200, 200, 200);
+  text-decoration: underline;
+}
+  
+.icon {
+    font-size: 25px;
+}
+
+.wrapper-img{    
+    width:100%;
+    height: auto;
+    display: block;
+    filter: brightness(60%);
+}
+
+.logo-name {
+    font-size: 1.5em;
+    font-family: Optima, sans-serif;
+    color: white;
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    max-width: 50%;
+}
+
+.logo-name p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.logo-name img {
+    height: 60px;
+    width: auto;
+    padding-left: 0.5em;
+    margin: 0;
+    object-fit: contain;
+    display: block;
+    flex-shrink: 0;
+}
+
+.goal {
+    position: absolute;
+    top: 43%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    z-index: 999;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: left;
+}
+
+.bottom-menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2em;
+    background-color: #0f0f0f;
+    padding: 3em 5em;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.bottom-menu-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.bottom-menu-header {
+    color: rgb(170, 170, 170);
+    font-size: 1em;
+    font-weight: 600;
+    margin-bottom: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.bottom-menu-content {
+    margin: 0.25em 0;
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+.bottom-menu-content a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.bottom-menu-content a:hover {
+    color: rgb(200, 200, 200);
+    text-decoration: underline;
+}
+
+.bottom-menu-socials {
+    display: flex;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.bottom-menu-socials a {
+    color: white;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.bottom-menu-socials a:hover {
+    color: rgb(200, 200, 200);
+    transform: translateY(-3px);
+}
+
+.bottom-menu-socials svg {
+    fill: currentColor;
+}
+
+.bottom-menu-copyright {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding-top: 2em;
+    margin-top: 2em;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgb(150, 150, 150);
+    font-size: 0.85em;
+}
+
+/* Responsive design for tablets */
+@media (max-width: 1024px) {
+    .logo-name {
+        font-size: 1.2em;
+        max-width: 45%;
+    }
+
+    .button {
+        font-size: 0.9em;
+        padding: 0.4em 0.8em;
+    }
+
+    .button-container {
+        gap: 0.3em;
+        padding: 0 0.5em;
+    }
+}
+
+/* Responsive design for smaller tablets */
+@media (max-width: 768px) {
+    .logo-name {
+        font-size: 1em;
+        max-width: 40%;
+    }
+
+    .logo-name p {
+        display: none; /* Hide text, show only logo */
+    }
+
+    .logo-name img {
+        height: 50px;
+        padding-left: 0.3em;
+    }
+
+    .button {
+        font-size: 0.85em;
+        padding: 0.3em 0.6em;
+    }
+
+    .button-container {
+        gap: 0.2em;
+    }
+
+    .bottom-menu {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2em 2em;
+        gap: 1.5em;
+    }
+}
+
+/* Responsive design for mobile phones */
+@media (max-width: 480px) {
+    .top-bar {
+        height: 60px;
+    }
+
+    .logo-name {
+        height: 60px;
+        font-size: 0.9em;
+    }
+
+    .logo-name img {
+        height: 45px;
+    }
+
+    .button {
+        font-size: 0.75em;
+        padding: 0.25em 0.5em;
+    }
+
+    .button-container {
+        height: 60px;
+        gap: 0.1em;
+        padding: 0 0.3em;
+    }
+
+    .bottom-menu {
+        grid-template-columns: 1fr;
+        padding: 2em 1.5em;
+        gap: 2em;
+    }
+
+    .bottom-menu-header {
+        font-size: 0.95em;
+    }
+
+    .bottom-menu-content {
+        font-size: 0.9em;
+    }
+
+    .bottom-menu-socials {
+        justify-content: center;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 360px) {
+    .button {
+        font-size: 0.7em;
+        padding: 0.2em 0.4em;
+    }
+
+    .logo-name img {
+        height: 40px;
+    }
+}
