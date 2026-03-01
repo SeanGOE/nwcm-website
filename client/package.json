@@ -20,10 +20,12 @@
     "webpack-dev-server": "^5.2.0"
   },
   "scripts": {
-    "build": "webpack --config src/webpack.config.js",
+    "build": "webpack --mode=production --config src/webpack.config.js",
     "lint": "comfy-tslint --no-mutation src/*.{ts,tsx}",
     "test": "ts-mocha -p tsconfig.json src/**/*_test.{ts,tsx} --require ignore-styles",
-    "start": "webpack-dev-server --config src/webpack.config.js"
+    "start": "webpack-dev-server --config src/webpack.config.js",
+    "clear": "rm -rf src/dist dist",
+    "clear:win": "if exist src\\dist rmdir /s /q src\\dist && if exist dist rmdir /s /q dist"
   },
   "name": "client",
   "version": "0.0.1",

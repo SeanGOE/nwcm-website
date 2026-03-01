@@ -3,6 +3,8 @@ import { ParamsDictionary } from "express-serve-static-core";
 import express from "express";
 import axios from "axios";
 import dotenv from 'dotenv';
+import fs from "fs";
+import path from "path";
 
 // Load environment variables (currently only YouTube API key)
 dotenv.config();
@@ -37,105 +39,7 @@ const CHANNEL_ID = 'UCCwFCo6kWkNaeIHdeP_XOGw';
 
 // Example: Array of events with various dates
 export let events: Event[] = [
-  {
-    title: "Sunday Service",
-    month: "Dec",
-    day: "22",
-    year: "2025",
-    time: "10:00 AM - 11:30 AM",
-    location: "Main Sanctuary",
-    description: "Join us for our weekly Sunday service where we gather to worship, pray, and hear a message from the Bible."
-  },
-  {
-    title: "Youth Group",
-    month: "Dec",
-    day: "23",
-    year: "2025",
-    time: "6:00 PM - 8:00 PM",
-    location: "Youth Center",
-    description: "Weekly gathering for teens with games, worship, and Bible study."
-  },
-  {
-    title: "Christmas Eve Service",
-    month: "Dec",
-    day: "24",
-    year: "2025",
-    time: "7:00 PM - 9:00 PM",
-    location: "Main Sanctuary",
-    description: "Special Christmas Eve candlelight service celebrating the birth of Jesus."
-  },
-  {
-    title: "Christmas Day Service",
-    month: "Dec",
-    day: "25",
-    year: "2025",
-    time: "10:00 AM - 11:00 AM",
-    location: "Main Sanctuary",
-    description: "Christmas morning worship service."
-  },
-  {
-    title: "Prayer Meeting",
-    month: "Dec",
-    day: "26",
-    year: "2025",
-    time: "7:00 PM - 8:00 PM",
-    location: "Prayer Room",
-    description: "Weekly prayer meeting - all are welcome."
-  },
-  {
-    title: "Sunday Service",
-    month: "Dec",
-    day: "29",
-    year: "2025",
-    time: "10:00 AM - 11:30 AM",
-    location: "Main Sanctuary",
-    description: "Join us for our weekly Sunday service."
-  },
-  {
-    title: "New Year's Eve Service",
-    month: "Dec",
-    day: "31",
-    year: "2025",
-    time: "9:00 PM - 12:30 AM",
-    location: "Main Sanctuary",
-    description: "Ring in the new year with worship, prayer, and fellowship."
-  },
-  {
-    title: "New Year's Day Service",
-    month: "Jan",
-    day: "1",
-    year: "2026",
-    time: "11:00 AM - 12:00 PM",
-    location: "Main Sanctuary",
-    description: "Start the new year in worship and prayer."
-  },
-  {
-    title: "Sunday Service",
-    month: "Jan",
-    day: "5",
-    year: "2026",
-    time: "10:00 AM - 11:30 AM",
-    location: "Main Sanctuary",
-    description: "Join us for our weekly Sunday service."
-  },
-  {
-    title: "Bible Study",
-    month: "Jan",
-    day: "8",
-    year: "2026",
-    time: "7:00 PM - 8:30 PM",
-    location: "Fellowship Hall",
-    description: "Midweek Bible study - diving deep into God's Word."
-  },
-  {
-    title: "Sunday Service",
-    month: "Jan",
-    day: "25",
-    year: "2026",
-    time: "10:00 AM - 11:30 AM",
-    location: "Main Sanctuary",
-    description: "This is test."
-  },
+  
 ];
 
 export let sermons: Sermon[] = [
@@ -144,11 +48,17 @@ export let sermons: Sermon[] = [
 
 const router = express.Router();
 
-/** Handles GET requests to retrieve all events */
 export const getEvents = (_req: SafeRequest, res: SafeResponse): void => {
+  try {
+    const filePath = path.join(__dirname, "events", "events.json");
+    const data = fs.readFileSync(filePath, "utf-8");
+    const events: Event[] = JSON.parse(data);
     res.send(events);
-    return;
-}
+  } catch (error) {
+    console.error("Error reading events.json:", error);
+    res.status(500).send({ error: "Failed to load events" });
+  }
+};
 
 /** Fetch sermons from YouTube channel */
 export const fetchSermonsFromYouTube = async (): Promise<Sermon[]> => {

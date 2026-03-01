@@ -120,8 +120,20 @@ export class HomePage extends Component<HomeProps, HomeState> {
                     <img src="img/IMG_1030.JPG" alt="icon" />
                 </div>
                 <div className="home-info-content">
-                    <h1>Welcome to <br></br>Network Christian Ministries!</h1>
-                    <p>For over 30 years, Network Christian Ministries has been committed to declaring the gospel, developing disciples, demonstrating mercy, and deploying leaders for the good of our city and beyond. Whether you’ve been part of the community for years, are new to the area, or are simply exploring faith, we invite you to continue this journey of renewal with us as we grow deeper in Christ together.</p>
+                    <h1>Welcome to <br></br><span className="home-info-content-name">NetWork Christian Ministries</span>!</h1>
+                    <p>
+                        For over 30 years, Network Christian Ministries has been a non-denominational home where 
+                        we are committed to declaring the Gospel, developing disciples, and deploying leaders for 
+                        the good of our city and beyond. We truly believe that the heart of the Gospel is found in 
+                        relationship; just as Jesus met people exactly where they were, we focus on sharing His 
+                        love through genuine friendship rather than impersonal methods. As a local expression of 
+                        the global Body of Christ, we love partnering with others to build God's Kingdom and seeing 
+                        how our "NetWork Class" helps every person discover the unique spiritual gifts God has 
+                        placed within them. Whether you've walked with the Lord for years or are just beginning to 
+                        explore faith, there is a place for you here to worship, study, and serve alongside us. 
+                        We invite you to join our journey of renewal as we grow deeper in Christ and find our 
+                        purpose together in His grace.
+                    </p>
                 </div>
             </div>
             {/* <div className="sundays">

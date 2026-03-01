@@ -42,7 +42,7 @@ export class App extends Component<AppProps, AppState> {
     return <div>
       <div className="logo-name">
         <img className="logo-name-img" src="img/logo.png" alt="Logo"></img>
-        <p>&nbsp; NetWork Christian Ministries</p>
+        <p>NetWork Christian Ministries</p>
       </div>
       <div className="top-bar">
         <div className="button-container">
@@ -108,7 +108,7 @@ export class App extends Component<AppProps, AppState> {
         </div>
       </div>
       <div className="bottom-menu-copyright">
-        <p>&copy; 2025 Network Christian Ministries. All rights reserved.</p>
+        <p>2025 Network Christian Ministries. All rights reserved.</p>
       </div>
     </div>;
   }

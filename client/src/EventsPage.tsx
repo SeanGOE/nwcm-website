@@ -40,7 +40,7 @@ export class EventsPage extends Component<EventsProps, EventsState> {
   }
 
   fetchEvents = () => {
-    fetch('/api/events')
+    fetch('http://35.94.198.76/api/events')
       .then((res) => this.doFetchEventsResp(res))
       .catch((error) => console.error('Error fetching events: ', error));
   };
@@ -126,7 +126,11 @@ export class EventsPage extends Component<EventsProps, EventsState> {
     return (
       <div className="modal-overlay" onClick={this.closeEventModal}>
         <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-          <button className="modal-close" onClick={this.closeEventModal}>×</button>
+          <button className="modal-close" onClick={this.closeEventModal}>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="24" height="24">
+              <path d="M18 6L6 18M6 6l12 12"/>
+            </svg>
+          </button>
           <h2 className="modal-title">{selectedEvent.title}</h2>
           <div className="modal-details">
             <div className="modal-detail-row">
@@ -231,9 +235,17 @@ export class EventsPage extends Component<EventsProps, EventsState> {
     return (
       <div className="calendar-container">
         <div className="calendar-header">
-          <button onClick={this.previousMonth} className="nav-button">‹</button>
+          <button onClick={this.previousMonth} className="nav-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+              <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+            </svg>
+          </button>
           <h2>{monthNames[month]} {year}</h2>
-          <button onClick={this.nextMonth} className="nav-button">›</button>
+          <button onClick={this.nextMonth} className="nav-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+              <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+            </svg>
+          </button>
         </div>
         <div className="calendar-weekdays">
           {dayNames.map(day => (

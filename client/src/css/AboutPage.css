@@ -402,5 +402,25 @@
     .giving-options {
         grid-template-columns: 1fr;
         gap: 1.5em;
+        padding: 0 1em;
+    }
+
+    .giving-card {
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+}
+
+@media (max-width: 480px) {
+    .giving-section {
+        padding: 3em 1em;
+    }
+
+    .giving-card {
+        padding: 1.5em 1em;
+    }
+
+    .giving-details strong {
+        font-size: 0.95em;
     }
 }

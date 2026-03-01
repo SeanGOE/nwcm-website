@@ -263,6 +263,10 @@
     margin-bottom: 0.5em;
 }
 
+.home-info-content-name {
+    color: rgb(6, 197, 255);
+}
+
 .home-info-content p {
     font-size: 1em;
     color: white;
