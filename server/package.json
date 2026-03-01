@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc --build tsconfig.json",
+    "clean": "rm -rf dist",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "watch": "tsc-watch -p tsconfig.json --onSuccess \"node dist/index.js\"",
     "lint": "comfy-tslint src/*.{ts,tsx}",
-    "test": "ts-mocha -p tsconfig.json src/**/*_test.ts",
-    "server": "node dist/index.ts",
-    "start": "tsc-watch -p tsconfig.json --onSuccess \"node dist/index.js\""
+    "test": "ts-mocha -p tsconfig.json src/**/*_test.ts"
   },
   "keywords": [],
   "author": "",
