@@ -4,7 +4,7 @@
   "main": "dist/index.js",
   "scripts": {
     "clean": "rm -rf dist",
-    "build": "tsc",
+    "build": "rm -rf dist && tsc && cp -r src/events dist/events",
     "start": "node dist/index.js",
     "dev": "ts-node src/index.ts",
     "watch": "tsc-watch -p tsconfig.json --onSuccess \"node dist/index.js\"",
