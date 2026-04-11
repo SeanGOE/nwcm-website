@@ -102,7 +102,7 @@ export const fetchSermonsFromYouTube = async (): Promise<Sermon[]> => {
     const sundayServiceVideos = playlistResp.data.items
       .filter((item: any) => {
         const title = item.snippet.title;
-        return title.toLowerCase().startsWith('sunday service');
+        return title.toLowerCase().startsWith('service');
       })
       .slice(0, 6)
       .map((item: any) => {
@@ -119,7 +119,7 @@ export const fetchSermonsFromYouTube = async (): Promise<Sermon[]> => {
           thumbnail: item.snippet.thumbnails?.maxres?.url || 
                      item.snippet.thumbnails?.high?.url ||
                      item.snippet.thumbnails?.medium?.url,
-          series: "Sunday Service"
+          series: "Church Service"
         };
       });
 

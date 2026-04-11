@@ -40,7 +40,8 @@ export class EventsPage extends Component<EventsProps, EventsState> {
   }
 
   fetchEvents = () => {
-    fetch('http://35.94.198.76/api/events')
+    // fetch('http://34.220.55.70:8088/api/events')
+    fetch('/api/events')
       .then((res) => this.doFetchEventsResp(res))
       .catch((error) => console.error('Error fetching events: ', error));
   };

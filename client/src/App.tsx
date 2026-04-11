@@ -6,6 +6,7 @@ import { HomePage } from './HomePage'; // Adjust the path based on the actual lo
 import { AboutPage } from './AboutPage'; // Adjust the path based on the actual location of AboutPage
 import { EventsPage } from './EventsPage'; // Adjust the path based on the actual location of EventsPage
 import { SermonsPage } from './SermonsPage'; // Adjust the path based on the actual location of GroupsPage
+import { GivingPage } from './GivingPage';
 
 type AppProps = {};  // no props
 
@@ -31,6 +32,7 @@ export class App extends Component<AppProps, AppState> {
             <Route path="/" element={<HomePage renderTopBar={this.renderTopBar} renderBottomMenu={this.renderBottomMenu} />} />
             <Route path="/about" element={<AboutPage renderTopBar={this.renderTopBar} renderBottomMenu={this.renderBottomMenu} />} />
             <Route path="/events" element={<EventsPage renderTopBar={this.renderTopBar} renderBottomMenu={this.renderBottomMenu} />} />
+            <Route path="/give" element={<GivingPage renderTopBar={this.renderTopBar} renderBottomMenu={this.renderBottomMenu} />} />
             <Route path="/sermons" element={<SermonsPage renderTopBar={this.renderTopBar} renderBottomMenu={this.renderBottomMenu} />}/>
           </Routes>
         </div>
@@ -51,6 +53,9 @@ export class App extends Component<AppProps, AppState> {
           </Link>
           <Link to="/about" className="button">
             Info
+          </Link>
+          <Link to="/give" className="button">
+            Give
           </Link>
           <Link to="/events" className="button">
             Events
@@ -79,7 +84,7 @@ export class App extends Component<AppProps, AppState> {
       </div>
       <div className="bottom-menu-section">
         <p className="bottom-menu-header">Get Involved</p>
-        <p className="bottom-menu-content"><Link to="/about#giving">Give</Link></p>
+        <p className="bottom-menu-content"><Link to="/give">Give</Link></p>
       </div>
       <div className="bottom-menu-section">
         <p className="bottom-menu-header">Visit Us</p>

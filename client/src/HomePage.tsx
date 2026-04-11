@@ -122,17 +122,22 @@ export class HomePage extends Component<HomeProps, HomeState> {
                 <div className="home-info-content">
                     <h1>Welcome to <br></br><span className="home-info-content-name">NetWork Christian Ministries</span>!</h1>
                     <p>
-                        For over 30 years, Network Christian Ministries has been a non-denominational home where 
-                        we are committed to declaring the Gospel, developing disciples, and deploying leaders for 
-                        the good of our city and beyond. We truly believe that the heart of the Gospel is found in 
-                        relationship; just as Jesus met people exactly where they were, we focus on sharing His 
-                        love through genuine friendship rather than impersonal methods. As a local expression of 
-                        the global Body of Christ, we love partnering with others to build God's Kingdom and seeing 
-                        how our "NetWork Class" helps every person discover the unique spiritual gifts God has 
-                        placed within them. Whether you've walked with the Lord for years or are just beginning to 
-                        explore faith, there is a place for you here to worship, study, and serve alongside us. 
-                        We invite you to join our journey of renewal as we grow deeper in Christ and find our 
-                        purpose together in His grace.
+                        For more than three decades, Network Christian Ministries has passionately pursued the call of 
+                        Jesus' Great Commission - reaching out to the world, nurturing believers, and making disciples across 
+                        every nation. To us, a disciple isn't just a follower; it's someone who wholeheartedly embraces and 
+                        lives out the teachings of Jesus. At the heart of His message are two commands found in Matthew 22:37-39: 
+                        "Jesus replied: 'Love the Lord your God with all your heart and with all your soul and with all your 
+                        mind.' This is the first and greatest commandment. And the second is like it: 'Love your neighbor 
+                        as yourself.'"
+                        <br/><br/>
+                        At NetWork, our slogan is: Connecting People to God and to one another. In the spirit of Jesus, who met 
+                        individuals right where they were, we are committed to expressing God's love by building authentic 
+                        relationships. We are a cross-cultural church where individuals from every background unite with Christ 
+                        at the heart of our community. The teachings of the cross shape and guide the culture of our fellowship.
+                        <br/><br/>
+                        No matter if you've been walking with God for many years or are just starting to discover faith, you are 
+                        welcome in our community. We encourage you to join us on our path of spiritual renewal, as we deepen our 
+                        relationship with Christ and discover our purpose together through His grace.
                     </p>
                 </div>
             </div>

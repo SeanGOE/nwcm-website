@@ -1,0 +1,326 @@
+.giving_page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Hero --- */
+.giving-hero {
+    position: relative;
+    height: 340px;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.giving-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 30% 50%, rgba(255,255,255,0.05) 0%, transparent 60%);
+}
+
+.giving-hero-overlay {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.giving-hero-overlay h1 {
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+/* --- Intro Section (matches Our Mission style) --- */
+.giving-intro {
+    padding: 60px 20px;
+    background-color: #e8e8e8;
+    text-align: center;
+}
+
+.giving-intro h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin: 0 0 24px 0;
+}
+
+.giving-intro p {
+    max-width: 850px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* --- Donation Options Section --- */
+.giving-options-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.giving-options-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 40px;
+}
+
+.giving-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.giving-option-card {
+    background: #f9f9fb;
+    border-radius: 12px;
+    padding: 32px 24px;
+    text-align: center;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.giving-option-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.giving-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 16px;
+    background: #1a1a2e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.giving-icon svg {
+    width: 28px;
+    height: 28px;
+}
+
+.giving-option-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 8px;
+}
+
+.giving-description {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 16px;
+}
+
+.giving-details {
+    font-size: 0.95rem;
+    color: #333;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.giving-details p {
+    margin: 4px 0;
+}
+
+.giving-button {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0070ba;
+    color: #ffffff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background 0.2s ease;
+}
+
+.giving-button:hover {
+    background: #005ea6
+}
+
+.giving-link {
+    display: inline-block;
+    background: #113547;
+    color: white;
+    padding: 0.6em 1.5em;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 0.5em;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.giving-link:hover {
+    background: #1a4d66;
+}
+
+.giving-note {
+    font-size: 0.85rem;
+    color: #888;
+    font-style: italic;
+}
+
+/* --- Giving as Worship Section --- */
+.giving-worship-section {
+    padding: 60px 20px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.giving-worship-content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.giving-worship-content h2 {
+    color: #113547;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.giving-worship-content p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 16px;
+}
+
+.giving-worship-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* --- Scripture Card --- */
+.giving-scripture-card {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #f9f9fb;
+}
+
+.scripture-content {
+    max-width: 700px;
+    text-align: center;
+    position: relative;
+}
+
+.scripture-quote-icon {
+    color: #1a1a2e;
+    opacity: 0.15;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 12px;
+}
+
+.scripture-content blockquote {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: #333;
+    font-style: italic;
+    margin: 0 0 16px 0;
+    padding: 0;
+    border: none;
+}
+
+.scripture-content cite {
+    font-size: 1rem;
+    color: #1a1a2e;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* --- Footer --- */
+.giving-footer {
+    padding: 32px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-top: 1px solid #eee;
+}
+
+.giving-footer p {
+    font-size: 0.9rem;
+    color: #888;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ============ RESPONSIVE ============ */
+
+@media (max-width: 1024px) {
+    .giving-options {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .giving-hero {
+        height: 260px;
+    }
+
+    .giving-hero-overlay h1 {
+        font-size: 2.4rem;
+    }
+
+    .giving-intro {
+        padding: 40px 16px;
+    }
+
+    .giving-options-section {
+        padding: 40px 16px;
+    }
+
+    .giving-options {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+
+    .giving-worship-section {
+        padding: 40px 16px;
+    }
+
+    .giving-scripture-card {
+        padding: 40px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .giving-hero {
+        height: 220px;
+    }
+
+    .giving-hero-overlay h1 {
+        font-size: 2rem;
+    }
+
+    .giving-intro h2 {
+        font-size: 1.6rem;
+    }
+
+    .giving-options {
+        grid-template-columns: 1fr;
+    }
+
+    .giving-options-section h2,
+    .giving-worship-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .scripture-content blockquote {
+        font-size: 1.1rem;
+    }
+}

@@ -34,7 +34,8 @@ export class SermonsPage extends Component<SermonsProps, SermonsState> {
   };
 
   fetchVideos = () => {
-    fetch('http://35.94.198.76/api/videos')
+    // fetch('http://34.220.55.70:8088/api/videos')
+    fetch('/api/videos')
       .then((res) => this.doFetchVideosResp(res))
       .catch((error) => console.error('Error fetching videos: ', error));
   };
