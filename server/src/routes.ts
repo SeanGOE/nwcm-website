@@ -102,7 +102,7 @@ export const fetchSermonsFromYouTube = async (): Promise<Sermon[]> => {
     const sundayServiceVideos = playlistResp.data.items
       .filter((item: any) => {
         const title = item.snippet.title;
-        return title.toLowerCase().startsWith('service');
+        return title.toLowerCase().includes('service');
       })
       .slice(0, 6)
       .map((item: any) => {
