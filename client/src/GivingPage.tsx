@@ -101,6 +101,7 @@ export class GivingPage extends Component<GiveProps, GiveState> {
                     {this.props.renderTopBar()}
                     
                     <div className="giving-hero">
+                        <img className="giving-hero-img" src="img/IMG_0016.JPG" alt="Church community"></img>
                         <div className="giving-hero-overlay">
                             <h1>Give</h1>
                         </div>
@@ -154,7 +155,7 @@ export class GivingPage extends Component<GiveProps, GiveState> {
                                 You must each decide in your heart how much to give. And don't give reluctantly 
                                 or in response to pressure. For God loves a person who gives cheerfully.
                             </blockquote>
-                            <cite>— 2 Corinthians 9:7</cite>
+                            <cite>- 2 Corinthians 9:7</cite>
                         </div>
                     </div>
     
