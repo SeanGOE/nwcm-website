@@ -266,6 +266,42 @@
 
   {
     "title": "Online Bible Study",
+    "month": "May",
+    "day": "6",
+    "year": "2026",
+    "time": "7:30 PM - 8:30 PM",
+    "location": "Zoom",
+    "description": "Join us for our weekly Bible Study"
+  },
+  {
+    "title": "Online Bible Study",
+    "month": "May",
+    "day": "13",
+    "year": "2026",
+    "time": "7:30 PM - 8:30 PM",
+    "location": "Zoom",
+    "description": "Join us for our weekly Bible Study"
+  },
+  {
+    "title": "Online Bible Study",
+    "month": "May",
+    "day": "20",
+    "year": "2026",
+    "time": "7:30 PM - 8:30 PM",
+    "location": "Zoom",
+    "description": "Join us for our weekly Bible Study"
+  },
+  {
+    "title": "Online Bible Study",
+    "month": "May",
+    "day": "27",
+    "year": "2026",
+    "time": "7:30 PM - 8:30 PM",
+    "location": "Zoom",
+    "description": "Join us for our weekly Bible Study"
+  },
+  {
+    "title": "Online Bible Study",
     "month": "Apr",
     "day": "15",
     "year": "2026",
@@ -330,6 +366,51 @@
 
 
 
+  {
+    "title": "In-Person Bible Study",
+    "month": "May",
+    "day": "1",
+    "year": "2026",
+    "time": "7:30 PM - 8:30 PM",
+    "location": "Brier/Lynwood",
+    "description": "Join us for our weekly Bible Study"
+  },
+  {
+    "title": "In-Person Bible Study",
+    "month": "May",
+    "day": "8",
+    "year": "2026",
+    "time": "7:30 PM - 8:30 PM",
+    "location": "Brier/Lynwood",
+    "description": "Join us for our weekly Bible Study"
+  },
+  {
+    "title": "In-Person Bible Study",
+    "month": "May",
+    "day": "15",
+    "year": "2026",
+    "time": "7:30 PM - 8:30 PM",
+    "location": "Brier/Lynwood",
+    "description": "Join us for our weekly Bible Study"
+  },
+  {
+    "title": "In-Person Bible Study",
+    "month": "May",
+    "day": "22",
+    "year": "2026",
+    "time": "7:30 PM - 8:30 PM",
+    "location": "Brier/Lynwood",
+    "description": "Join us for our weekly Bible Study"
+  },
+  {
+    "title": "In-Person Bible Study",
+    "month": "May",
+    "day": "29",
+    "year": "2026",
+    "time": "7:30 PM - 8:30 PM",
+    "location": "Brier/Lynwood",
+    "description": "Join us for our weekly Bible Study"
+  },
   {
     "title": "Good Friday Service",
     "month": "Apr",
