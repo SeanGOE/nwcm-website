@@ -1,127 +1,62 @@
 [
   {
-    "title": "Women's Ministry",
-    "month": "Mar",
-    "day": "29",
-    "year": "2026",
-    "time": "12:00 PM - 1:30 PM",
-    "location": "Elks Club",
-    "description": "Join us for Women's Ministry."
-  },
-  {
-    "title": "Women's Ministry",
-    "month": "Apr",
-    "day": "26",
-    "year": "2026",
-    "time": "12:00 PM - 1:30 PM",
-    "location": "Elks Club",
-    "description": "Join us for Women's Ministry."
-  },
-  {
-    "title": "Women's Ministry",
-    "month": "May",
-    "day": "16",
-    "year": "2026",
-    "time": "12:00 PM - 1:30 PM",
-    "location": "Elks Club",
-    "description": "Join us for Women's Ministry."
-  },
-  {
-    "title": "Women's Ministry",
+    "title": "Sunday Service",
     "month": "Jun",
     "day": "21",
     "year": "2026",
-    "time": "12:00 PM - 1:30 PM",
+    "time": "10:00 AM - 11:30 AM",
     "location": "Elks Club",
-    "description": "Join us for Women's Ministry."
+    "description": "Join us for our weekly Sunday service."
   },
   {
-    "title": "Women's Ministry",
+    "title": "Father's Day",
+    "month": "Jun",
+    "day": "21",
+    "year": "2026",
+    "time": "11:30 AM - 12:30 PM",
+    "location": "Elks Club",
+    "description": "Theme: Texas/Western Style. Celebration & Fellowship."
+  },
+  {
+    "title": "Summer Picnic",
     "month": "Jul",
-    "day": "25",
+    "day": "4",
     "year": "2026",
-    "time": "12:00 PM - 1:30 PM",
-    "location": "Elks Club",
-    "description": "Join us for Women's Ministry."
+    "time": "10:00 AM - 6:00 PM",
+    "location": "Lynndale Park, Shelter 1",
+    "description": "Join us for our summer picnic."
   },
   {
-    "title": "Women's Ministry",
-    "month": "Aug",
-    "day": "30",
-    "year": "2026",
-    "time": "12:00 PM - 1:30 PM",
-    "location": "Elks Club",
-    "description": "Join us for Women's Ministry."
-  },
-  {
-    "title": "Women's Ministry",
+    "title": "Church 32nd Anniversary",
     "month": "Sep",
     "day": "13",
     "year": "2026",
-    "time": "12:00 PM - 1:30 PM",
+    "time": "10:00 AM - 11:30 AM",
     "location": "Elks Club",
-    "description": "Join us for Women's Ministry."
+    "description": "Celebrate our church's anniversary."
   },
   {
-    "title": "Women's Ministry",
-    "month": "Oct",
-    "day": "18",
-    "year": "2026",
-    "time": "12:00 PM - 1:30 PM",
-    "location": "Elks Club",
-    "description": "Join us for Women's Ministry."
-  },
-  {
-    "title": "Women's Ministry",
+    "title": "Fall Family Festival",
     "month": "Nov",
-    "day": "15",
+    "day": "1",
     "year": "2026",
-    "time": "12:00 PM - 1:30 PM",
+    "time": "10:00 AM - 11:30 AM",
     "location": "Elks Club",
-    "description": "Join us for Women's Ministry."
+    "description": "Celebrate Fall Family Festival with us."
   },
   {
-    "title": "Women's Ministry",
+    "title": "Christmas Party",
     "month": "Dec",
-    "day": "12",
-    "year": "2026",
-    "time": "12:00 PM - 1:30 PM",
-    "location": "Elks Club",
-    "description": "Join us for Women's Ministry."
-  },
-
-
-  {
-    "title": "Father's Day Service",
-    "month": "June",
-    "day": "21",
+    "day": "20",
     "year": "2026",
     "time": "10:00 AM - 11:30 AM",
-    "location": "TBD",
-    "description": "Join us for our Father's Day celebration/service."
+    "location": "Elks Club",
+    "description": "Celebrate Christmas with us."
   },
   {
     "title": "Sunday Service",
-    "month": "May",
-    "day": "3",
-    "year": "2026",
-    "time": "10:00 AM - 11:30 AM",
-    "location": "Elks Club",
-    "description": "Join us for our weekly Sunday service."
-  },
-  {
-    "title": "Mother's Day Service",
-    "month": "May",
-    "day": "10",
-    "year": "2026",
-    "time": "10:00 AM - 11:30 AM",
-    "location": "Elks Club",
-    "description": "Join us for our Mother's Day celebration/service."
-  },
-  {
-    "title": "Sunday Service",
-    "month": "May",
-    "day": "17",
+    "month": "Jun",
+    "day": "7",
     "year": "2026",
     "time": "10:00 AM - 11:30 AM",
     "location": "Elks Club",
@@ -129,8 +64,8 @@
   },
   {
     "title": "Sunday Service",
-    "month": "May",
-    "day": "24",
+    "month": "Jun",
+    "day": "14",
     "year": "2026",
     "time": "10:00 AM - 11:30 AM",
     "location": "Elks Club",
@@ -138,25 +73,25 @@
   },
   {
     "title": "Sunday Service",
-    "month": "May",
-    "day": "31",
+    "month": "Jun",
+    "day": "28",
     "year": "2026",
     "time": "10:00 AM - 11:30 AM",
     "location": "Elks Club",
     "description": "Join us for our weekly Sunday service."
   },
   {
-    "title": "Easter Service",
-    "month": "Apr",
+    "title": "Sunday Service",
+    "month": "Jul",
     "day": "5",
     "year": "2026",
     "time": "10:00 AM - 11:30 AM",
     "location": "Elks Club",
-    "description": "Join us for Easter Sunday service."
+    "description": "Join us for our weekly Sunday service."
   },
   {
     "title": "Sunday Service",
-    "month": "Apr",
+    "month": "Jul",
     "day": "12",
     "year": "2026",
     "time": "10:00 AM - 11:30 AM",
@@ -165,7 +100,7 @@
   },
   {
     "title": "Sunday Service",
-    "month": "Apr",
+    "month": "Jul",
     "day": "19",
     "year": "2026",
     "time": "10:00 AM - 11:30 AM",
@@ -174,7 +109,7 @@
   },
   {
     "title": "Sunday Service",
-    "month": "Apr",
+    "month": "Jul",
     "day": "26",
     "year": "2026",
     "time": "10:00 AM - 11:30 AM",
@@ -183,8 +118,8 @@
   },
   {
     "title": "Sunday Service",
-    "month": "Feb",
-    "day": "1",
+    "month": "Aug",
+    "day": "2",
     "year": "2026",
     "time": "10:00 AM - 11:30 AM",
     "location": "Elks Club",
@@ -192,8 +127,8 @@
   },
   {
     "title": "Sunday Service",
-    "month": "Feb",
-    "day": "8",
+    "month": "Aug",
+    "day": "9",
     "year": "2026",
     "time": "10:00 AM - 11:30 AM",
     "location": "Elks Club",
@@ -201,8 +136,8 @@
   },
   {
     "title": "Sunday Service",
-    "month": "Feb",
-    "day": "15",
+    "month": "Aug",
+    "day": "16",
     "year": "2026",
     "time": "10:00 AM - 11:30 AM",
     "location": "Elks Club",
@@ -210,8 +145,8 @@
   },
   {
     "title": "Sunday Service",
-    "month": "Feb",
-    "day": "22",
+    "month": "Aug",
+    "day": "23",
     "year": "2026",
     "time": "10:00 AM - 11:30 AM",
     "location": "Elks Club",
@@ -219,210 +154,178 @@
   },
   {
     "title": "Sunday Service",
-    "month": "Mar",
-    "day": "1",
+    "month": "Aug",
+    "day": "30",
     "year": "2026",
     "time": "10:00 AM - 11:30 AM",
     "location": "Elks Club",
     "description": "Join us for our weekly Sunday service."
   },
   {
-    "title": "Sunday Service",
-    "month": "Mar",
-    "day": "8",
-    "year": "2026",
-    "time": "10:00 AM - 11:30 AM",
-    "location": "Elks Club",
-    "description": "Join us for our weekly Sunday service."
-  },
-  {
-    "title": "Sunday Service",
-    "month": "Mar",
-    "day": "15",
-    "year": "2026",
-    "time": "10:00 AM - 11:30 AM",
-    "location": "Elks Club",
-    "description": "Join us for our weekly Sunday service."
-  },
-  {
-    "title": "Sunday Service",
-    "month": "Mar",
-    "day": "22",
-    "year": "2026",
-    "time": "10:00 AM - 11:30 AM",
-    "location": "Elks Club",
-    "description": "Join us for our weekly Sunday service."
-  },
-  {
-    "title": "Sunday Service",
-    "month": "Mar",
-    "day": "29",
-    "year": "2026",
-    "time": "10:00 AM - 11:30 AM",
-    "location": "Elks Club",
-    "description": "Join us for our weekly Sunday service."
-  },
-
-
-  {
     "title": "Online Bible Study",
-    "month": "May",
-    "day": "6",
-    "year": "2026",
-    "time": "7:30 PM - 8:30 PM",
-    "location": "Zoom",
-    "description": "Join us for our weekly Bible Study"
-  },
-  {
-    "title": "Online Bible Study",
-    "month": "May",
-    "day": "13",
-    "year": "2026",
-    "time": "7:30 PM - 8:30 PM",
-    "location": "Zoom",
-    "description": "Join us for our weekly Bible Study"
-  },
-  {
-    "title": "Online Bible Study",
-    "month": "May",
-    "day": "20",
-    "year": "2026",
-    "time": "7:30 PM - 8:30 PM",
-    "location": "Zoom",
-    "description": "Join us for our weekly Bible Study"
-  },
-  {
-    "title": "Online Bible Study",
-    "month": "May",
-    "day": "27",
-    "year": "2026",
-    "time": "7:30 PM - 8:30 PM",
-    "location": "Zoom",
-    "description": "Join us for our weekly Bible Study"
-  },
-  {
-    "title": "Online Bible Study",
-    "month": "Apr",
-    "day": "15",
-    "year": "2026",
-    "time": "7:30 PM - 8:30 PM",
-    "location": "Zoom",
-    "description": "Join us for our weekly Bible Study"
-  },
-  {
-    "title": "Online Bible Study",
-    "month": "Apr",
-    "day": "22",
-    "year": "2026",
-    "time": "7:30 PM - 8:30 PM",
-    "location": "Zoom",
-    "description": "Join us for our weekly Bible Study"
-  },
-  {
-    "title": "Online Bible Study",
-    "month": "Apr",
-    "day": "29",
-    "year": "2026",
-    "time": "7:30 PM - 8:30 PM",
-    "location": "Zoom",
-    "description": "Join us for our weekly Bible Study"
-  },
-  {
-    "title": "Online Bible Study",
-    "month": "Mar",
-    "day": "4",
-    "year": "2026",
-    "time": "7:30 PM - 8:30 PM",
-    "location": "Zoom",
-    "description": "Join us for our weekly Bible Study"
-  },
-  {
-    "title": "Online Bible Study",
-    "month": "Mar",
-    "day": "11",
-    "year": "2026",
-    "time": "7:30 PM - 8:30 PM",
-    "location": "Zoom",
-    "description": "Join us for our weekly Bible Study"
-  },
-  {
-    "title": "Online Bible Study",
-    "month": "Mar",
-    "day": "18",
-    "year": "2026",
-    "time": "7:30 PM - 8:30 PM",
-    "location": "Zoom",
-    "description": "Join us for our weekly Bible Study"
-  },
-  {
-    "title": "Online Bible Study",
-    "month": "Mar",
-    "day": "25",
-    "year": "2026",
-    "time": "7:30 PM - 8:30 PM",
-    "location": "Zoom",
-    "description": "Join us for our weekly Bible Study"
-  },
-
-
-
-  {
-    "title": "In-Person Bible Study",
-    "month": "May",
-    "day": "1",
-    "year": "2026",
-    "time": "7:30 PM - 8:30 PM",
-    "location": "Brier/Lynwood",
-    "description": "Join us for our weekly Bible Study"
-  },
-  {
-    "title": "In-Person Bible Study",
-    "month": "May",
-    "day": "8",
-    "year": "2026",
-    "time": "7:30 PM - 8:30 PM",
-    "location": "Brier/Lynwood",
-    "description": "Join us for our weekly Bible Study"
-  },
-  {
-    "title": "In-Person Bible Study",
-    "month": "May",
-    "day": "15",
-    "year": "2026",
-    "time": "7:30 PM - 8:30 PM",
-    "location": "Brier/Lynwood",
-    "description": "Join us for our weekly Bible Study"
-  },
-  {
-    "title": "In-Person Bible Study",
-    "month": "May",
-    "day": "22",
-    "year": "2026",
-    "time": "7:30 PM - 8:30 PM",
-    "location": "Brier/Lynwood",
-    "description": "Join us for our weekly Bible Study"
-  },
-  {
-    "title": "In-Person Bible Study",
-    "month": "May",
-    "day": "29",
-    "year": "2026",
-    "time": "7:30 PM - 8:30 PM",
-    "location": "Brier/Lynwood",
-    "description": "Join us for our weekly Bible Study"
-  },
-  {
-    "title": "Good Friday Service",
-    "month": "Apr",
+    "month": "Jun",
     "day": "3",
     "year": "2026",
     "time": "7:30 PM - 8:30 PM",
-    "location": "Elks Club",
+    "location": "Zoom",
+    "description": "Join us for our weekly Bible Study"
+  },
+  {
+    "title": "Online Bible Study",
+    "month": "Jun",
+    "day": "10",
+    "year": "2026",
+    "time": "7:30 PM - 8:30 PM",
+    "location": "Zoom",
+    "description": "Join us for our weekly Bible Study"
+  },
+  {
+    "title": "Online Bible Study",
+    "month": "Jun",
+    "day": "17",
+    "year": "2026",
+    "time": "7:30 PM - 8:30 PM",
+    "location": "Zoom",
+    "description": "Join us for our weekly Bible Study"
+  },
+  {
+    "title": "Online Bible Study",
+    "month": "Jun",
+    "day": "24",
+    "year": "2026",
+    "time": "7:30 PM - 8:30 PM",
+    "location": "Zoom",
+    "description": "Join us for our weekly Bible Study"
+  },
+  {
+    "title": "Online Bible Study",
+    "month": "Jul",
+    "day": "1",
+    "year": "2026",
+    "time": "7:30 PM - 8:30 PM",
+    "location": "Zoom",
+    "description": "Join us for our weekly Bible Study"
+  },
+  {
+    "title": "Online Bible Study",
+    "month": "Jul",
+    "day": "8",
+    "year": "2026",
+    "time": "7:30 PM - 8:30 PM",
+    "location": "Zoom",
+    "description": "Join us for our weekly Bible Study"
+  },
+  {
+    "title": "Online Bible Study",
+    "month": "Jul",
+    "day": "15",
+    "year": "2026",
+    "time": "7:30 PM - 8:30 PM",
+    "location": "Zoom",
+    "description": "Join us for our weekly Bible Study"
+  },
+  {
+    "title": "Online Bible Study",
+    "month": "Jul",
+    "day": "22",
+    "year": "2026",
+    "time": "7:30 PM - 8:30 PM",
+    "location": "Zoom",
+    "description": "Join us for our weekly Bible Study"
+  },
+  {
+    "title": "Online Bible Study",
+    "month": "Jul",
+    "day": "29",
+    "year": "2026",
+    "time": "7:30 PM - 8:30 PM",
+    "location": "Zoom",
+    "description": "Join us for our weekly Bible Study"
+  },
+  {
+    "title": "Online Bible Study",
+    "month": "Aug",
+    "day": "5",
+    "year": "2026",
+    "time": "7:30 PM - 8:30 PM",
+    "location": "Zoom",
+    "description": "Join us for our weekly Bible Study"
+  },
+  {
+    "title": "Online Bible Study",
+    "month": "Aug",
+    "day": "12",
+    "year": "2026",
+    "time": "7:30 PM - 8:30 PM",
+    "location": "Zoom",
+    "description": "Join us for our weekly Bible Study"
+  },
+  {
+    "title": "Online Bible Study",
+    "month": "Aug",
+    "day": "19",
+    "year": "2026",
+    "time": "7:30 PM - 8:30 PM",
+    "location": "Zoom",
+    "description": "Join us for our weekly Bible Study"
+  },
+  {
+    "title": "Online Bible Study",
+    "month": "Aug",
+    "day": "26",
+    "year": "2026",
+    "time": "7:30 PM - 8:30 PM",
+    "location": "Zoom",
     "description": "Join us for our weekly Bible Study"
   },
   {
     "title": "In-Person Bible Study",
-    "month": "Apr",
+    "month": "Jun",
+    "day": "5",
+    "year": "2026",
+    "time": "7:30 PM - 8:30 PM",
+    "location": "Brier/Lynwood",
+    "description": "Join us for our weekly Bible Study"
+  },
+  {
+    "title": "In-Person Bible Study",
+    "month": "Jun",
+    "day": "12",
+    "year": "2026",
+    "time": "7:30 PM - 8:30 PM",
+    "location": "Brier/Lynwood",
+    "description": "Join us for our weekly Bible Study"
+  },
+  {
+    "title": "In-Person Bible Study",
+    "month": "Jun",
+    "day": "19",
+    "year": "2026",
+    "time": "7:30 PM - 8:30 PM",
+    "location": "Brier/Lynwood",
+    "description": "Join us for our weekly Bible Study"
+  },
+  {
+    "title": "In-Person Bible Study",
+    "month": "Jun",
+    "day": "26",
+    "year": "2026",
+    "time": "7:30 PM - 8:30 PM",
+    "location": "Brier/Lynwood",
+    "description": "Join us for our weekly Bible Study"
+  },
+  {
+    "title": "In-Person Bible Study",
+    "month": "Jul",
+    "day": "3",
+    "year": "2026",
+    "time": "7:30 PM - 8:30 PM",
+    "location": "Brier/Lynwood",
+    "description": "Join us for our weekly Bible Study"
+  },
+  {
+    "title": "In-Person Bible Study",
+    "month": "Jul",
     "day": "10",
     "year": "2026",
     "time": "7:30 PM - 8:30 PM",
@@ -431,7 +334,7 @@
   },
   {
     "title": "In-Person Bible Study",
-    "month": "Apr",
+    "month": "Jul",
     "day": "17",
     "year": "2026",
     "time": "7:30 PM - 8:30 PM",
@@ -440,7 +343,7 @@
   },
   {
     "title": "In-Person Bible Study",
-    "month": "Apr",
+    "month": "Jul",
     "day": "24",
     "year": "2026",
     "time": "7:30 PM - 8:30 PM",
@@ -449,8 +352,8 @@
   },
   {
     "title": "In-Person Bible Study",
-    "month": "Mar",
-    "day": "6",
+    "month": "Jul",
+    "day": "31",
     "year": "2026",
     "time": "7:30 PM - 8:30 PM",
     "location": "Brier/Lynwood",
@@ -458,8 +361,8 @@
   },
   {
     "title": "In-Person Bible Study",
-    "month": "Mar",
-    "day": "13",
+    "month": "Aug",
+    "day": "7",
     "year": "2026",
     "time": "7:30 PM - 8:30 PM",
     "location": "Brier/Lynwood",
@@ -467,8 +370,8 @@
   },
   {
     "title": "In-Person Bible Study",
-    "month": "Mar",
-    "day": "20",
+    "month": "Aug",
+    "day": "14",
     "year": "2026",
     "time": "7:30 PM - 8:30 PM",
     "location": "Brier/Lynwood",
@@ -476,8 +379,17 @@
   },
   {
     "title": "In-Person Bible Study",
-    "month": "Mar",
-    "day": "27",
+    "month": "Aug",
+    "day": "21",
+    "year": "2026",
+    "time": "7:30 PM - 8:30 PM",
+    "location": "Brier/Lynwood",
+    "description": "Join us for our weekly Bible Study"
+  },
+  {
+    "title": "In-Person Bible Study",
+    "month": "Aug",
+    "day": "28",
     "year": "2026",
     "time": "7:30 PM - 8:30 PM",
     "location": "Brier/Lynwood",
