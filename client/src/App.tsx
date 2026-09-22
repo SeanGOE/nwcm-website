@@ -7,6 +7,7 @@ import { AboutPage } from './AboutPage'; // Adjust the path based on the actual 
 import { EventsPage } from './EventsPage'; // Adjust the path based on the actual location of EventsPage
 import { SermonsPage } from './SermonsPage'; // Adjust the path based on the actual location of GroupsPage
 import { GivingPage } from './GivingPage';
+import { LoveLanguageQuiz } from './LoveLanguageQuiz';
 
 type AppProps = {};  // no props
 
@@ -34,6 +35,7 @@ export class App extends Component<AppProps, AppState> {
             <Route path="/events" element={<EventsPage renderTopBar={this.renderTopBar} renderBottomMenu={this.renderBottomMenu} />} />
             <Route path="/give" element={<GivingPage renderTopBar={this.renderTopBar} renderBottomMenu={this.renderBottomMenu} />} />
             <Route path="/sermons" element={<SermonsPage renderTopBar={this.renderTopBar} renderBottomMenu={this.renderBottomMenu} />}/>
+            <Route path="/lovelanguagequiz" element={ <LoveLanguageQuiz />}/>
           </Routes>
         </div>
       </Router>
